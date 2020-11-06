@@ -1,0 +1,115 @@
+.btn {
+    &:link,
+    &:visited {
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        padding: 1rem 3rem;
+        border-radius: .4rem;
+        letter-spacing: 1px;
+        transition: all .2s;
+
+        @include respond(medium-phone) {
+            padding: .8rem 1.8rem;
+        }
+        
+        
+    }
+    
+    &-marg {
+        margin-right: 2rem;
+    }
+    
+    &-full:link,
+    &-full:visited {
+        border: 1px solid $color-primary;
+        background-image: linear-gradient(to right, $color-primary, $color-primary);
+        transition: background-image .2s;
+    
+    }
+    
+    &-full:hover,
+    &-full:active {
+        background-image: linear-gradient(to right, $color-primary-dark, $color-primary);
+    }
+
+
+    &-gold:link, 
+    &-gold:visited {
+        border: 1px solid $color-tertiary-light;
+        background-image: linear-gradient(to right, $color-tertiary-dark, $color-tertiary-dark);
+        transition: background-image .2s;
+    }
+
+    &-white:link,
+    &-white:visited {
+        
+        background-color: $color-white;
+        transition: background-image .2s;
+    }
+
+    &-white:hover,
+    &-white:active { 
+        background-color: #f8f8f8;
+    }
+
+    &-gold:hover, 
+    &-gold:active {
+        background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark);
+    }
+
+    &-red:link, 
+    &-red:visited {
+        border: 1px solid $color-quaternary-light;
+        background-image: linear-gradient(to right, $color-quaternary-dark, $color-quaternary-dark);
+    }
+
+    &-red:hover,
+    &-red:active {
+        background-image: linear-gradient(to right, $color-quaternary-light, $color-quaternary-dark);
+    }
+
+    &-green:link,
+    &-green:visited {
+        border: 1px solid $color-secondary-light;
+        background-image: linear-gradient(to right, $color-secondary-dark, $color-secondary-dark);
+    }
+
+    &-green:hover,
+    &-green:active {
+        background-image: linear-gradient(to right, $color-secondary-light, $color-secondary-dark);
+    }
+
+    
+    
+    &-trans:link,
+    &-trans:visited {
+        border: 1px solid $color-primary;
+        color: $color-primary;
+        background-image: linear-gradient(to right, rgba($color-primary-orange, 0), rgba($color-primary, 0));
+    }
+    
+    &-trans:hover,
+    &-trans:active {
+        
+        color: $color-white;
+        background-image: linear-gradient(to right, rgba($color-primary-orange, 1), rgba($color-primary, 1));
+
+    }
+    
+
+    
+    
+}
+
+
+@include respond(medium-phone) {
+    .display {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+}
+

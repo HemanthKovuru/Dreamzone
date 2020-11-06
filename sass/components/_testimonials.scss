@@ -1,0 +1,98 @@
+.box {
+    padding: 3rem 2rem 2.5rem 3rem;
+    box-shadow: 0 1rem 4rem rgba($color-black, .2);
+    border-radius: .3rem;
+    width: 100%;
+    color: #fff;
+    font-style: italic;
+    font-size: 1.7rem;
+    text-align: center;
+    position: relative;
+
+
+    @include respond(tab-port) {
+        width: 40% !important;
+        
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+    @include respond(medium-phone) {
+        width: 70% !important;
+
+    }
+    @include respond(small-phone) {
+        width: 63% !important;
+
+    }
+
+    blockquote::before {
+        font-family: serif;
+        display: block;
+        content: "\201C";
+        font-size: 500%;
+        position: absolute;
+        top: -3rem;
+        left: -.8rem;
+    }
+
+    .shape {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        float: left;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        
+
+        &__img {
+            height: 100%;
+        }
+
+        .u-margin-right {
+            transform: translateX(-1rem);
+        }
+
+        &__caption {
+            margin-top: 3rem;
+            text-align: left;
+        }
+    }
+
+}
+
+.bg--1 {
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, .9), rgba($color-primary-dark, .9));
+}
+.bg--2 {
+    background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .9), rgba($color-secondary-dark, .9));
+}
+.bg--3 {
+    background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .9), rgba($color-tertiary-dark, .9));
+}
+.bg--4 {
+    background-image: linear-gradient(to right bottom, rgba($color-quaternary-light, .9), rgba($color-quaternary-dark, .9));
+
+}
+
+// .story {
+//     width: 100%;
+//     background-image: linear-gradient(to right bottom, rgba($color-primary-light, .9), rgba($color-primary-dark, .9));
+//     padding: 6rem;
+//     font-size: 1.6rem;
+//     color: $color-white;
+
+//     &__shape {
+//         width: 15rem;
+//         height: 15rem;
+//         background-color: #a79693;
+//         clip-path: circle(50% at 50% 50%);
+//         float: left;
+//     }
+
+//     &__img {
+//         height: 100%;
+//     }
+
+// }

@@ -1,0 +1,33 @@
+.text-box {
+    padding: 2%;
+
+    @include respond(tab-port) {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    @include respond(medium-phone) {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+}
+
+.paragraph {
+    font-size: 1.7rem;
+    width: 70%;
+    margin-left: 15%;
+    word-spacing: 2px;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+
+.para {
+    font-size: 1.6rem;
+    word-spacing: 1px;
+    // text-align: center;
+
+}

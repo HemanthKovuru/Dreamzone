@@ -1,0 +1,40 @@
+.section-about {
+    background-color: #fff;
+    padding: 6rem 0;
+}
+
+.section-courses {
+    background-color: #eee;
+    padding: 6rem 0;
+
+}
+
+
+
+.section-testimonials {
+    background-color: #f5f5f5;
+    padding: 8rem 0;
+}
+
+.section-form {
+    padding: 10rem 0;
+    background-color: #eee;
+    
+    
+}   
+
+.enquiry-box {
+    width: 50%;
+    margin: 0 auto;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    height: 50rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+}
+
+
+.section-blog {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../imgs/screenshott.jpg);
+    background-size: cover;
+}

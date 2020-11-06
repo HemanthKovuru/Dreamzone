@@ -1,0 +1,145 @@
+.header {
+    background-image: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.8)), url(../imgs/minified/bg-2-min.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    position: relative;
+
+    &__phone-logo {
+        opacity: 0;
+        width: 0;
+        height: 6rem;
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+
+        @include respond(phone) {
+            opacity: 1;;
+            width: 6rem;
+        }
+        
+    }
+
+
+    @include respond(tab-port) {
+        height: 70vh;
+    }
+
+
+    
+
+    .nav-bg {
+        display: block;
+        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary);
+        font-size: 1.7rem;
+        height: 4.5rem;
+        padding: .5rem;
+        position: fixed;
+        text-transform: uppercase;
+        width: 100%;
+        right: 0;
+        top: 0;
+        z-index: 999;
+        box-shadow: 0 1rem 3rem rgba($color-primary, 0.3);
+        transition: all .3s;
+        
+
+        .logo-box {
+            float: left;
+
+            .logo {
+                height: 3rem;
+                margin-right: .2rem;
+                vertical-align: middle;
+                margin-top: -0.8rem;
+            }
+
+        }
+        .logo-box:hover {
+            cursor: pointer;
+        }
+
+        .main-nav {
+            list-style: none;
+            float: right;
+
+            li {
+                display: inline-block;
+                margin-right: 2.5rem;
+
+                .nav-link {
+                    padding-bottom: .8rem;
+                    
+                    
+                    &:link,
+                    &:visited {
+                        color: #fff;
+                        text-decoration: none;
+                        border-bottom: 2px solid transparent;
+                        transition: border-bottom .2s;
+                    }
+
+                    &:hover {
+                        border-bottom: 2px solid #fff;
+                    }
+                }
+            }
+        }
+
+    }
+
+    @include respond(phone) {
+        .nav-bg {
+            height: 25rem;
+            width: 0;
+            opacity: 0;
+            
+    
+            .logo-box {
+                opacity: 0;
+                width: 0;
+    
+            }
+
+    
+            .main-nav {
+                list-style: none;
+                float: none;
+                padding: 1rem;
+    
+                li {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+
+                }
+            }
+    
+        }
+    
+    }
+
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+
+        
+        @include respond(tab-land) {
+            width: 100%;
+            text-align: center;
+            
+        }
+
+    }
+
+}
+
+
+
